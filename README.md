@@ -1,2 +1,2 @@
 # etsena
-An Android app for shopping on AliExpress
+An example of Android app for shopping on AliExpress.

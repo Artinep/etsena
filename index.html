@@ -16,5 +16,21 @@
 <body>
 	<div id="title">Etsena</div>
 	<canvas id="thecanvas" tabindex="0"></canvas>
+	<script type="module">
+		'use strict';
+		
+		import * as THREE from './tsy_misy_bedy/three.module.min.js';
+		import { OrbitControls } from './tsy_misy_bedy/OrbitControls.js';
+		import { Water } from './tsy_misy_bedy/Water.js';
+
+		window.runtimeEnableLeakVars = { stackLookupCount: 0, };
+		const canvas = document.querySelector("#thecanvas"), loader = new THREE.TextureLoader(), clock = new THREE.Clock();
+		canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+
+		window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {
+		    return false;
+		}
+
+	</script>
 </body>
 </html>
